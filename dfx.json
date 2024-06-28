@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "pomodoro_project_backend": {
+      "candid": "src/pomodoro_project_backend/pomodoro_project_backend.did",
+      "package": "pomodoro_project_backend",
+      "type": "rust"
+    },
+    "pomodoro_project_frontend": {
+      "dependencies": [
+        "pomodoro_project_backend"
+      ],
+      "source": [
+        "src/pomodoro_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "pomodoro_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
